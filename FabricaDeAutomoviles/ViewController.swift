@@ -14,8 +14,6 @@ class ViewController: UIViewController {
         
         let automovil = Automovil()
         
-        print("El boleano que respresenta el automovil encendido es: \(automovil.encender())")
-        
     }
     
 }

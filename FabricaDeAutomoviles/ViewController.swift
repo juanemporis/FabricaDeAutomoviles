@@ -11,8 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let automovil = Automovil()
+        
+        print("El boleano que respresenta el automovil encendido es: \(automovil.encender())")
+        
     }
-
-
+    
 }
 

@@ -61,11 +61,11 @@
 				C88EBE1B2823196300CEE749 /* AppDelegate.swift */,
 				C88EBE1D2823196300CEE749 /* SceneDelegate.swift */,
 				C88EBE1F2823196300CEE749 /* ViewController.swift */,
+				C88EBE2F282319EB00CEE749 /* Automovil.swift */,
 				C88EBE212823196300CEE749 /* Main.storyboard */,
 				C88EBE242823196500CEE749 /* Assets.xcassets */,
 				C88EBE262823196500CEE749 /* LaunchScreen.storyboard */,
 				C88EBE292823196500CEE749 /* Info.plist */,
-				C88EBE2F282319EB00CEE749 /* Automovil.swift */,
 			);
 			path = FabricaDeAutomoviles;
 			sourceTree = "<group>";

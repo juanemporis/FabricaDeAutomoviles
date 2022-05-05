@@ -28,6 +28,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Crear Automovil sencillo">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="crearAutomovil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WrD-ts-UTc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRP-vv-cLU">
                                 <rect key="frame" x="101.5" y="403" width="211" height="36"/>
@@ -35,6 +38,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Crear Automovil Mazda">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="crearAutomovilMazda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdp-87-xSY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,17 +58,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="RCB-er-odv"/>
                     <connections>
-                        <segue destination="zkV-wq-KNc" kind="show" id="0zR-Ta-Gut"/>
+                        <segue destination="zkV-wq-KNc" kind="show" identifier="segueSegundaPantalla" id="0zR-Ta-Gut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Segunda Pantalla-->
         <scene sceneID="Pe7-Q4-6CM">
             <objects>
-                <viewController id="zkV-wq-KNc" sceneMemberID="viewController">
+                <viewController id="zkV-wq-KNc" customClass="ViewControllerSegundaPantalla" customModule="FabricaDeAutomoviles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KLs-kb-LWw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,11 +83,17 @@
                                 <rect key="frame" x="171.5" y="433" width="71" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                                <connections>
+                                    <action selector="apagar:" destination="zkV-wq-KNc" eventType="touchUpInside" id="W5F-Cp-sCC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuS-Js-KTc">
                                 <rect key="frame" x="167" y="531" width="78" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="zkV-wq-KNc" eventType="touchUpInside" id="hVk-h8-bSy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CH-Vd-fNd">
                                 <rect key="frame" x="162" y="627" width="90.5" height="235"/>
@@ -98,33 +110,43 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Mostrar información">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="mostrarInformacion:" destination="zkV-wq-KNc" eventType="touchUpInside" id="gKg-Wz-Qec"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRo-xA-K22">
-                                <rect key="frame" x="165" y="344" width="86" height="31"/>
+                                <rect key="frame" x="163" y="349" width="86" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Encender"/>
+                                <connections>
+                                    <action selector="encender:" destination="zkV-wq-KNc" eventType="touchUpInside" id="Vce-fR-ruA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="26H-S9-xtZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TuS-Js-KTc" firstAttribute="leading" secondItem="26H-S9-xtZ" secondAttribute="leading" constant="167" id="2Az-Ot-2Ug"/>
-                            <constraint firstItem="gRo-xA-K22" firstAttribute="top" secondItem="20m-tV-3Sz" secondAttribute="bottom" constant="42" id="3GO-vF-Xtc"/>
-                            <constraint firstItem="kfa-pM-UsB" firstAttribute="top" secondItem="gRo-xA-K22" secondAttribute="bottom" constant="58" id="7Tp-MD-dex"/>
-                            <constraint firstItem="gRo-xA-K22" firstAttribute="centerX" secondItem="AAe-e5-zta" secondAttribute="centerX" id="Fe1-5Y-i6k"/>
+                            <constraint firstItem="gRo-xA-K22" firstAttribute="top" secondItem="20m-tV-3Sz" secondAttribute="bottom" constant="47" id="3GO-vF-Xtc"/>
+                            <constraint firstItem="kfa-pM-UsB" firstAttribute="top" secondItem="gRo-xA-K22" secondAttribute="bottom" constant="53" id="7Tp-MD-dex"/>
+                            <constraint firstItem="gRo-xA-K22" firstAttribute="centerX" secondItem="AAe-e5-zta" secondAttribute="centerX" constant="-2" id="Fe1-5Y-i6k"/>
                             <constraint firstItem="20m-tV-3Sz" firstAttribute="centerX" secondItem="TuS-Js-KTc" secondAttribute="centerX" id="OQP-9E-vC9"/>
                             <constraint firstItem="0CH-Vd-fNd" firstAttribute="bottom" secondItem="26H-S9-xtZ" secondAttribute="bottom" id="PFV-VH-oMn"/>
-                            <constraint firstItem="gRo-xA-K22" firstAttribute="top" secondItem="KLs-kb-LWw" secondAttribute="top" constant="344" id="TXd-WP-gPa"/>
+                            <constraint firstItem="gRo-xA-K22" firstAttribute="top" secondItem="KLs-kb-LWw" secondAttribute="top" constant="349" id="TXd-WP-gPa"/>
                             <constraint firstItem="0CH-Vd-fNd" firstAttribute="centerX" secondItem="kfa-pM-UsB" secondAttribute="centerX" id="VF9-ss-mdd"/>
-                            <constraint firstItem="gRo-xA-K22" firstAttribute="centerX" secondItem="kfa-pM-UsB" secondAttribute="centerX" constant="1" id="Wx9-uZ-RCj"/>
+                            <constraint firstItem="gRo-xA-K22" firstAttribute="centerX" secondItem="kfa-pM-UsB" secondAttribute="centerX" constant="-1" id="Wx9-uZ-RCj"/>
                             <constraint firstItem="20m-tV-3Sz" firstAttribute="top" secondItem="AAe-e5-zta" secondAttribute="bottom" constant="32" id="fma-t2-Rtz"/>
                             <constraint firstItem="26H-S9-xtZ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TuS-Js-KTc" secondAttribute="trailing" symbolic="YES" id="mhv-0t-1bf"/>
                             <constraint firstItem="20m-tV-3Sz" firstAttribute="leading" secondItem="26H-S9-xtZ" secondAttribute="leading" constant="86" id="mrx-7Q-tNo"/>
-                            <constraint firstItem="gRo-xA-K22" firstAttribute="leading" secondItem="26H-S9-xtZ" secondAttribute="leading" constant="165" id="qHn-4j-w9E"/>
+                            <constraint firstItem="gRo-xA-K22" firstAttribute="leading" secondItem="26H-S9-xtZ" secondAttribute="leading" constant="163" id="qHn-4j-w9E"/>
                             <constraint firstItem="0CH-Vd-fNd" firstAttribute="top" secondItem="TuS-Js-KTc" secondAttribute="bottom" constant="65" id="wYy-WW-91s"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HJ8-40-7ku"/>
+                    <connections>
+                        <outlet property="ImageView" destination="20m-tV-3Sz" id="Eyr-VB-M61"/>
+                        <outlet property="label" destination="0CH-Vd-fNd" id="PfC-tj-WFa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4X2-lg-0E6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

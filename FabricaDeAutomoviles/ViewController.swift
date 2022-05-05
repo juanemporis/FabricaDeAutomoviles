@@ -8,13 +8,29 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var tipoAutomovilInicio: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let automovil = Automovil()
-        
+                
+    }
+    @IBAction func crearAutomovil(_ sender: Any) {
+        tipoAutomovilInicio = 0
+        performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
     }
     
+    @IBAction func crearAutomovilMazda(_ sender: Any) {
+        tipoAutomovilInicio = 1
+        performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destino = segue.destination as?
+            ViewControllerSegundaPantalla {
+            destino.tipoAutomovil = self.tipoAutomovilInicio
+        
+        }
+    }
 }
 

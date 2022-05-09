@@ -11,10 +11,13 @@ class Automovil{
     
     var color = "neutro"
     var numeroLlantas = 4
-    var precio = 0
+    var precio = 8000
     
     func encender() -> Bool {
         return true
+    }
+    func acelerar() -> String {
+        return "Aceleración Exitosa"
     }
     
     func apagar() -> Bool{

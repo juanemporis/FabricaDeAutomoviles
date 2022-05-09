@@ -15,6 +15,7 @@
 		C88EBE282823196500CEE749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88EBE262823196500CEE749 /* LaunchScreen.storyboard */; };
 		C88EBE30282319EB00CEE749 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EBE2F282319EB00CEE749 /* Automovil.swift */; };
 		C88EBE342823399D00CEE749 /* ViewControllerSegundaPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EBE332823399D00CEE749 /* ViewControllerSegundaPantalla.swift */; };
+		C8921F9128245C7D00283477 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8921F9028245C7D00283477 /* AutomovilElectrico.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C88EBE292823196500CEE749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C88EBE2F282319EB00CEE749 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 		C88EBE332823399D00CEE749 /* ViewControllerSegundaPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSegundaPantalla.swift; sourceTree = "<group>"; };
+		C8921F9028245C7D00283477 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C88EBE1F2823196300CEE749 /* ViewController.swift */,
 				C88EBE332823399D00CEE749 /* ViewControllerSegundaPantalla.swift */,
 				C88EBE2F282319EB00CEE749 /* Automovil.swift */,
+				C8921F9028245C7D00283477 /* AutomovilElectrico.swift */,
 				C88EBE212823196300CEE749 /* Main.storyboard */,
 				C88EBE242823196500CEE749 /* Assets.xcassets */,
 				C88EBE262823196500CEE749 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				C88EBE202823196300CEE749 /* ViewController.swift in Sources */,
 				C88EBE342823399D00CEE749 /* ViewControllerSegundaPantalla.swift in Sources */,
 				C88EBE1C2823196300CEE749 /* AppDelegate.swift in Sources */,
+				C8921F9128245C7D00283477 /* AutomovilElectrico.swift in Sources */,
 				C88EBE30282319EB00CEE749 /* Automovil.swift in Sources */,
 				C88EBE1E2823196300CEE749 /* SceneDelegate.swift in Sources */,
 			);

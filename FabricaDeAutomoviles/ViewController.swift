@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let destino = segue.destination as?
+            
             ViewControllerSegundaPantalla {
             destino.tipoAutomovil = self.tipoAutomovilInicio
         
